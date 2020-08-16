@@ -1,0 +1,211 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+
+.nav-handle{
+    position: fixed;
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(#400c4460, #00000000);
+    z-index: 1;
+}
+
+#ball{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page1-icon{
+    display: flex;
+    margin-top: 20px;
+}
+
+.page1-icon span{
+    border: 1px solid #ffffff36;
+    display: grid;
+    place-items: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 1s ease;
+}
+
+.page1-icon > a{
+    text-decoration: none;
+    color: white;
+}
+
+.page1-icon i{
+    font-size: 15px;
+}
+
+.page1-container{
+    display: flex;
+}
+
+.page1-icon span:hover{
+    background-color: #e015b4;
+}
+
+.myself-head{
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.brand{
+    font-size: 2em;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.brand span{
+    color: #e015b4;
+}
+
+.nav-list{
+    text-transform: uppercase;
+}
+
+.nav-list a{
+    letter-spacing: 4px;
+    cursor: pointer !important;
+    height: 35px;
+    transition: border-bottom-color 1s ease;
+    font-size: 15px;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list a:hover{
+    border-bottom: 2px solid #e015b4;
+}
+
+.navbar-nav{
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.pill{
+    height: 300px;
+    width: 120px;
+    border-radius: 70px;
+    overflow: hidden;
+    border: 7px solid #d10aa696;
+    position: relative;
+    margin: auto;
+}
+
+.pill img{
+    position: absolute;
+    animation: mymove 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+.main-container > div{
+    height: 100vh;
+}
+
+.page1{
+    /* Photo by Robin */
+    background-image: url(https://mourithemes.com/robin/robin/images/home/2.jpg);
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.page1 > div{
+    background-color: #000000af;
+    width: 100%;
+}
+
+.page1 > div > div{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+@keyframes mymove {
+    0%   {left: -70px}
+    100%  {left: -20px}
+}
+
+
+.card-body p{
+    font-size: 15px;
+}
+
+.card{
+    margin: 5px;
+}
+
+#portfolio, #contact{
+    display: grid;
+    place-items: center;
+    padding: 100px 30px;
+}
+
+.hire span{
+    color: #e015b4;
+}
+
+.hire table tr > td{
+    padding: 15px 70px 15px 20px;
+    text-align: left;
+    border: 1px solid rgba(128, 128, 128, 0.233);
+}
+
+.hire table tr > td:first-of-type{
+    font-weight: 600;
+}
+
+.hire table tr:hover{
+    background-color: #ff00c81f;
+}
+
+.page3-icon span{
+    border: 1px solid #41414147;
+    color: black;
+    display: grid;
+    place-items: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 1s ease;
+}
+
+.page3-icon{
+    display: flex;
+}
+
+.page3-icon a{
+    text-decoration: none;
+}
+
+.page3-icon i{
+    font-size: 15px;
+}
+
+.page3-icon span:hover{
+    background-color: #e015b4;
+    color: white;
+}
+
+.card-header{
+    background-image: linear-gradient(to bottom right, #c031a1c2, #e01530ad);
+    color: white
+}
