@@ -9,12 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
     <title>Portfolio By Arjun</title>
 </head>
 <body>
     <header class="nav-container">
         <nav class="navbar nav-handle">
-            <div class="navbar-brand ml-0 ml-md-5 brand">AR<span>JUN</span></div>
+            <div class="navbar-brand ml-0 ml-md-5 brand" id="main-logo">AR<span>JUN</span></div>
             <div class="mr-0 mr-md-5">
                 <ul class="navbar-nav mr-auto nav-list">
                     <li class="nav-item"><a href="#home" class="mr-2 mr-md-3 px-2 pb-2">HOME</a></li>
@@ -37,29 +38,50 @@
                     <div>
                         <div>
                             <h1>I am</h1>
-                            <span><</span>
-                            <span>M</span>
-                            <span>E</span>
-                            <span>R</span>
-                            <span>N</span>
-                            <span>&nbsp;</span>
-                            <span>S</span>
-                            <span>T</span>
-                            <span>A</span>
-                            <span>C</span>
-                            <span>K</span>
-                            <span>&nbsp;</span>
-                            <span>D</span>
-                            <span>E</span>
-                            <span>V</span>
-                            <span>E</span>
-                            <span>L</span>
-                            <span>O</span>
-                            <span>P</span>
-                            <span>E</span>
-                            <span>R</span>
-                            <span>/</span>
-                            <span>></span>
+                            <div>
+                                <span><</span>
+                                <span>&nbsp;</span>
+                                <span class="out1">F</span>
+                                <span class="out1">U</span>
+                                <span class="out1">L</span>
+                                <span class="out1">L</span>
+                                <span class="out1">&nbsp;</span>
+                                <span class="out1">S</span>
+                                <span class="out1">T</span>
+                                <span class="out1">A</span>
+                                <span class="out1">C</span>
+                                <span class="out1">K</span>
+                                <span class="out1">&nbsp;</span>
+                                <span class="out1">D</span>
+                                <span class="out1">E</span>
+                                <span class="out1">V</span>
+                                <span class="out1">E</span>
+                                <span class="out1">L</span>
+                                <span class="out1">O</span>
+                                <span class="out1">P</span>
+                                <span class="out1">E</span>
+                                <span class="out1">R</span>
+                                
+                                <span class="in2">A</span>
+                                <span class="in2">R</span>
+                                <span class="in2">J</span>
+                                <span class="in2">U</span>
+                                <span class="in2">N</span>
+                                <span class="in2">&nbsp;</span>
+                                <span class="in2">K</span>
+                                <span class="in2">&nbsp;</span>
+                                <span class="in2">P</span>
+                                <span class="in2">R</span>
+                                <span class="in2">A</span>
+                                <span class="in2">S</span>
+                                <span class="in2">A</span>
+                                <span class="in2">D</span>
+
+                                <span class="pink">|</span>
+                                <span>&nbsp;</span>
+                                <span>/</span>
+                                <span>></span>
+                            </div>
                         </div>
                         <div class="page1-icon">
                             <a href="https://github.com/arjun1237"><span><i class="fa fa-github"></i></span></a>
@@ -134,6 +156,12 @@
                 </div>
             </div>
         </div>
+        <div id="coding">
+            <div class="calendar">
+                <!-- Loading stuff -->
+                Loading.....
+            </div>
+        </div>
         <div id="contact" class="hire text-center">
             <div>
                 <h1 class="display-4 mb-5">Hire me <span>NOW</span>, before someone else does!</h1>
@@ -175,6 +203,9 @@
         </div>
     </div>
     
+    <script src="ball-bounce.js"></script>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script src="./github.js"></script>
 </body>
 </html>
