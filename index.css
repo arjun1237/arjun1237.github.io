@@ -12,8 +12,8 @@ body{
     position: fixed;
     width: 100%;
     color: white;
-    background-image: linear-gradient(#400c4460, #00000000);
-    z-index: 1;
+    background-image: linear-gradient(#2f1631fc, #32073500);
+    z-index: 10;
 }
 
 #ball{
@@ -123,7 +123,7 @@ body{
 }
 
 .main-container > div{
-    height: 100vh;
+    height: max-content;
 }
 
 .page1{
@@ -155,14 +155,64 @@ body{
     font-size: 15px;
 }
 
+.card-body img{
+    /* padding-bottom: 5px; */
+    /* background-color: #d30000; */
+    margin-bottom: 20px;
+}
+
 .card{
+    /* border: 2px solid #d3000038; */
+    background-color: #394343;
+    color: #dfdfdfab;
     margin: 5px;
+}
+
+.card-body .btn{
+    width: 100px;
+    margin: 0 10px;
+}
+
+
+.card-header{
+    /* background-image: linear-gradient(to bottom right, #e14b6b, #ae0e23); */
+    /* color: #d1102a */
+    background-color: #21272791;
+}
+
+.btn-danger{
+    background-color: #679b9b;
+    border: none;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    z-index: 1;
+    animation-name: scale;
+    animation-duration: 0.7s;   
+    animation-fill-mode: forwards;
+}
+
+@keyframes scale {
+  from {
+      transform: scale(1);
+      /* background-color: #52043c; */
+    }
+  to {
+      transform: scale(1.08);
+      /* background-color: #350327; */
+    }
 }
 
 #portfolio, #contact{
     display: grid;
     place-items: center;
     padding: 100px 30px;
+}
+
+#portfolio{
+    /* background-image: linear-gradient(to bottom right, #637373, #203535); */
+    background-color: #637373;
 }
 
 .hire span{
@@ -212,11 +262,6 @@ body{
     color: white;
 }
 
-.card-header{
-    background-image: linear-gradient(to bottom right, #c031a1c2, #e01530ad);
-    color: white
-}
-
 .out1, .out2{
     display: none;
 }
@@ -228,8 +273,41 @@ body{
 #coding{
     display: grid;
     place-items: center;
+    /* background-color: #ff6f9b; */
 }
 
 .calender{
     width: 900px;
 }
+
+.img-holder{
+    margin: 100px auto 60px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-holder > div> img{
+    width: 80px;
+}
+
+.img-holder > div{
+    background-color: #ff47e02a;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* .modalHelper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    z-index: 10;
+    display: none;
+}
+
+body .card:hover .modalHelper{
+    display: block;
+} */
