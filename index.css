@@ -161,8 +161,9 @@ body{
 }
 
 
-.card-body p{
+.card-text{
     font-size: 15px;
+    padding: 0 10px;
 }
 
 .card-body img{
@@ -172,21 +173,22 @@ body{
 }
 
 .card{
-    border: 1px solid #d3000038;
+    /* border: 2px solid #d3000038; */
     /* background-color: #394343; */
     margin: 5px;
+    box-shadow: 0px 15px 20px 1px #ba3a50;
     color: #ba3a50;
 }
 
+.card-holder{
+    /* padding: 30px 40px; */
+    transform: scale(0.8);
+}
+
 .card-body .btn{
-    width: 100px;
-    margin: 0 10px;
+    width: 90px;
+    margin: 0 5px;
 }
-
-.card-body p{
-    padding: 0 20px;
-}
-
 
 .card-header{
     background-image: linear-gradient(to bottom right, #a72855, #9e206a);
