@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -12,7 +16,7 @@ body{
     position: fixed;
     width: 100%;
     color: white;
-    background-image: linear-gradient(#2f1631fc, #32073500);
+    background-image: linear-gradient(#430926aa, #00000000);
     z-index: 10;
 }
 
@@ -122,8 +126,14 @@ body{
     animation-timing-function: ease-in;
 }
 
+.main-container{
+    /* scroll-snap-type: y mandatory; */
+    /* overflow-y: scroll; */
+}
+
 .main-container > div{
-    height: max-content;
+    /* height: max-content; */
+    /* scroll-snap-align: start; */
 }
 
 .page1{
@@ -162,10 +172,10 @@ body{
 }
 
 .card{
-    /* border: 2px solid #d3000038; */
-    background-color: #394343;
-    color: #dfdfdfab;
+    border: 1px solid #d3000038;
+    /* background-color: #394343; */
     margin: 5px;
+    color: #ba3a50;
 }
 
 .card-body .btn{
@@ -173,15 +183,20 @@ body{
     margin: 0 10px;
 }
 
+.card-body p{
+    padding: 0 20px;
+}
+
 
 .card-header{
-    /* background-image: linear-gradient(to bottom right, #e14b6b, #ae0e23); */
-    /* color: #d1102a */
-    background-color: #21272791;
+    background-image: linear-gradient(to bottom right, #a72855, #9e206a);
+    /* color: #d1102a; */
+    /* background-color: #9d0e56; */
+    color: #dfdfdfab;
 }
 
 .btn-danger{
-    background-color: #679b9b;
+    /* background-color: #679b9b; */
     border: none;
 }
 
@@ -212,7 +227,7 @@ body{
 
 #portfolio{
     /* background-image: linear-gradient(to bottom right, #637373, #203535); */
-    background-color: #637373;
+    /* background-color: #74017410; */
 }
 
 .hire span{
