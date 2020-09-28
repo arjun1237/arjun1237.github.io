@@ -176,7 +176,7 @@ body{
     /* border: 2px solid #d3000038; */
     /* background-color: #394343; */
     margin: 5px;
-    box-shadow: 0px 15px 20px 1px #ba3a50;
+    box-shadow: 0px 20px 20px 1px #ba3a4f98;
     color: #ba3a50;
 }
 
@@ -230,6 +230,11 @@ body{
 #portfolio{
     /* background-image: linear-gradient(to bottom right, #637373, #203535); */
     /* background-color: #74017410; */
+}
+
+.project-title{
+    color: #b1078c;
+    letter-spacing: 10px;
 }
 
 .hire span{
