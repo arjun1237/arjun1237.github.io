@@ -2,6 +2,14 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --color-calendar-graph-day-bg: #dddbdb;
+    --color-calendar-graph-day-L1-bg: #d79bda;
+    --color-calendar-graph-day-L2-bg: #a03e9d;
+    --color-calendar-graph-day-L3-bg: #750475;
+    --color-calendar-graph-day-L4-bg: #42083b;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -333,3 +341,8 @@ body{
 body .card:hover .modalHelper{
     display: block;
 } */
+
+#object{
+	background-color: #fe5652;
+	visibility: hidden;
+}
